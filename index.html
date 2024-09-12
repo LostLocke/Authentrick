@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your page description here"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Ricks Website</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="IMG/logo.png" alt="logo" id="logo-img">
+            <div id="logo-text">
+                <p>AuthentRick</p>
+                <p>Counselling</p>
+            </div>
+        </div>
+        <nav class="rubik" id="main-nav">
+            <ul class="nav-links">
+                <li><a href="#home-banner">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact-container">Contact</a></li>
+            </ul>
+            <div id="mobile-menu" class="rubik">
+                <span class="menu-icon" onclick="toggleMenu()">☰</span>
+            </div>
+        </nav>
+        <div id="mobile-nav" class="mobile-nav">
+            <span class="close-btn" onclick="toggleMenu()">×</span>
+            <ul>
+                <li><a href="#home-banner">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact-container">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="home-banner" class="rubik">
+        <h2>Supporting Your Uniqueness</h2>
+        <a href='#process-section' class="banner-button rubik">Show Me</a>
+    </div>
+    <div id="about">
+        <div id="profile">
+            <img src="/IMG/profile-pic.jpg" alt="profile picture">
+        </div>
+        <div id="profile-info">
+            <h3>I'm Mike </h3>
+            <p>As a dedicated road collision counsellor, I specialize in providing targeted support for individuals affected by road traffic accidents. My approach combines empathetic listening with evidence-based therapeutic techniques to address the emotional and psychological impacts of these traumatic events. With a focus on helping clients navigate the complex emotions and challenges that arise after a collision, I am committed to guiding you towards healing and resilience. Whether you’re dealing with anxiety, trauma, or stress related to a recent accident, my expertise as a road collision counsellor is here to support you every step of the way.</p>
+        </div>
+    </div>
+    <div id="process-section">
+        <div class="section">
+            <h1>Steps to Recovery</h1>
+            <p>Recovering from a road traffic collision involves both emotional and practical steps, and our compassionate process is designed to support you through each phase. We start by creating a safe and empathetic space where you can openly express your feelings and concerns. Our approach includes personalized therapy sessions that focus on understanding and managing trauma, anxiety, and stress related to the accident. We work with you to set realistic goals and provide coping strategies to help you regain control and confidence. Throughout the recovery journey, we offer continuous support, ensuring that you feel heard, valued, and empowered as you move towards healing and a renewed sense of well-being.</p>
+        </div>
+        <div class="section">
+            <h1>A Safe Space for Healing</h1>
+            <p>At our practice, we understand the importance of a supportive environment in your journey to recovery. As a trusted collision counsellor in Stevenage, I offer a safe and welcoming space where you can feel comfortable discussing your experiences and emotions. Our therapy rooms are designed to provide a tranquil and confidential setting, ensuring that you can openly share your thoughts without judgment. The calming atmosphere and attentive approach help create a sense of security, allowing you to focus on healing and moving forward. Whether you’re dealing with trauma, anxiety, or stress from a road traffic collision, our dedicated space in Stevenage is here to support your path to recovery.</p>
+        </div>
+        <div class="section">
+            <h1>Ongoing Support</h1>
+            <p>At our practice, your well-being is our top priority. As your dedicated collision counsellor, we are committed to supporting you for as long as you need, ensuring that your recovery is both thorough and personalized. We understand that healing from a road traffic collision is a unique journey for each individual, and we are here to provide continuous support every step of the way. Our approach is centered around putting you first, with flexible therapy options and consistent, compassionate care tailored to your specific needs. Whether your path to recovery requires weeks or months, we remain dedicated to offering unwavering support and guidance, helping you regain confidence and find peace at your own pace.</p>
+        </div>
+    </div>
+    <div id="services">
+        <h1>Counselling Services</h1>
+        <p>We offer specialized support and guidance for individuals affected by traffic accidents.<br />Services include emotional counseling, trauma recovery, legal assistance, and coping strategies tailored to help clients navigate the aftermath of a collision</p>
+        <div class="intro-table">
+            <table>
+                <thead>
+                    <th>Introductory Call</th>
+                    <th>Price</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>15 Minutes</td>
+                        <td>Free</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pricing-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Single Session</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>30 Minutes</td>
+                        <td>£40</td>
+                    </tr>
+                    <tr>
+                        <td>60 Minutes</td>
+                        <td>£75</td>
+                    </tr>
+                    <tr>
+                        <td>90 Minutes</td>
+                        <td>£110</td>
+                    </tr>
+                    <tr>
+                        <td>2 Hours</td>
+                        <td>£135</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="block-pricing-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Block Sessions</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>5 x 1 Hour Sessions</td>
+                        <td>£355</td>
+                    </tr>
+                    <tr>
+                        <td>10 x 1 Hour Sessions</td>
+                        <td>£675</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="cert-banner">
+        <img src="/IMG/bacp.svg" class="cert" alt="BACP Logo">
+        <img src="/IMG/National_CS.jpeg" class="cert" alt="National Counselling Society logo">
+        <img src="/IMG/accredited-registers-quality-mark.jpg" class="cert" alt="accredited counsellors logo">
+        <img src="/IMG/UKCP.jpg" class="cert" alt="UKCP logo">
+    </div>
+    <div id="contact-container">
+        <h1>Get in Touch</h1>
+        <div id="contact-section">
+            <div id="contact-form">
+                <form class="contact-form" action="/submit_form" method="post">
+                    <h2>Contact Us</h2>
+                    <label for="name">Name <span class="optional">(Required)</span></label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email <span class="optional">(Required)</span></label>
+                    <input type="email" id="form-email" name="email" required>
+                    
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="form-phone" name="phone">
+                    
+                    <label for="message">Message <span class="optional">(Required)</span></label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+            <div id="contact-info">
+                <div id="contact">
+                    <div id="phone">
+                        <img src="/IMG/phone.svg" alt="phone icon" class="svg">
+                        <p>01438 123456</p>
+                    </div>
+                    <div id="email">
+                        <img src="/IMG/email.svg" alt="email icon" class="svg">
+                        <p>Rick@AuthentRickCounselling.com</p>
+                    </div>
+                    <div id="socials">
+                        <a href="#"><img src="/IMG/Insta.svg" class=""></a>
+                        <a href="#"><img src="/IMG/facebook.svg"></a>
+                        <a href="#"><img src="IMG/x.svg"></a>
+                    </div>
+                </div>
+                <div id="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39387.43741208374!2d-0.2340346635995369!3d51.9026679158902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48762916a02a64d9%3A0x4341e6e1cebe29fa!2sStevenage!5e0!3m2!1sen!2suk!4v1726134668971!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 www.AuthentRickCounselling.co.uk</p>
+    </footer>
+</body>
+</html>

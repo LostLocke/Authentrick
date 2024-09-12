@@ -1,0 +1,617 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HTML5 display settings for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+/* Remove default list styles */
+ul, ol {
+    list-style: none;
+}
+
+/* Remove default table border spacing */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Remove default form element styling */
+button, input, select, textarea {
+    background: none;
+    border: none;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+/* Remove default inline link styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Ensure images scale correctly */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Remove default fieldset border and spacing */
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure no vertical space between images and text */
+img, svg {
+    vertical-align: middle;
+}
+
+/* Ensure consistent font rendering */
+body {
+    font-family: "rubik", sans-serif;
+    line-height: 1.6;
+}
+
+/* Ensure form elements look consistent */
+input, textarea, select, button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Ensure consistent box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* End CSS Reset */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FAF9F6;; /* Background color of the navbar */
+    box-shadow: 0 4px 12px 2px rgba(0, 0, 0, 0.2); /* Offset-X, Offset-Y, Blur Radius, Spread Radius, Color */
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+#logo-text {
+    text-align: left;
+    align-self: center;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-family: "PT Serif", serif;
+    font-weight: 600;
+    
+}
+
+#logo-img {
+    padding: 10px;
+    max-height: 150px;
+
+}
+
+nav {
+    display: flex;
+    align-items: flex-end;
+    font-weight: 500 !important;
+    letter-spacing: 0.7px;
+    font-size: 1.2rem;
+}
+
+nav ul {
+
+    display: flex;
+    flex-direction: row;
+}
+
+nav li {
+    padding-left: 15px;
+    padding-bottom: 10px;
+    
+}
+
+nav li a:hover {
+    color: cadetblue;
+}
+
+nav li:last-child {
+    padding-right: 100px;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+/* Mobile Navigation Drawer */
+.mobile-nav {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixes the position to the viewport */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height */
+    background-color: #FAF9F6; /* Background color */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    padding: 50px; /* Space around content */
+    z-index: 1000; /* Ensure it appears above other content */
+    overflow-y: auto; /* Allow scrolling if needed */
+}
+
+/* Show the mobile navigation when the 'active' class is added */
+.mobile-nav.active {
+    display: block; /* Show when active */
+}
+
+/* Mobile menu icon */
+.menu-icon {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Close button */
+.close-btn {
+    display: block;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1001; /* Ensure it is above the menu */
+}
+
+/* Styling for navigation links in mobile menu */
+.mobile-nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+.mobile-nav li {
+    margin: 15px 0; /* Spacing between menu items */
+}
+
+.mobile-nav a {
+    font-size: 1.5rem; /* Increase font size for readability */
+    color: #333; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: 600;
+}
+
+.mobile-nav a:hover {
+    color: cadetblue; /* Hover color */
+}
+
+
+#home-banner {
+    height: 600px;
+    background-image: url(/IMG/banner.webp);
+    background-position: center;
+    color: #FAF9F6;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#home-banner h2 {
+    font-size: 4em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    align-self: center;
+}
+
+.banner-button {
+    align-self: center;
+    border: 2px solid;
+    border-radius: 5%;
+    width: 150px;
+    margin-top: 40px;
+    padding: 10px;
+    font-weight: 500;
+    color: white;
+    background-color: cadetblue;
+    font-size: 1.3rem;
+}
+
+.banner-button:hover {
+    background: none;
+    color: white;
+    border-color: cadetblue;
+}
+
+#about {
+    width: 80%;
+    padding-top: 100px;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+#profile {
+    min-width: 20%;
+}
+
+#profile img {
+    margin-top: 10px;
+    border-radius: 80%
+}
+
+#profile-info {
+    padding-left: 30px;
+}
+
+#profile-info h3 {
+    font-size: 3rem;
+}
+
+#process-section {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.section {
+    padding: 30px 0;
+    width: 100%;
+    background-color:#d4a373;
+    text-align: center;
+    box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.2),  0 -4px 12px -4px rgba(0, 0, 0, 0.2); /* Offset-X, Offset-Y, Blur Radius, Spread Radius, Color */
+}
+
+.section h1 {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #333333;
+}
+
+.section p {
+    width: 80%;
+    margin: 30px auto 0;
+    line-height: 1.6rem;
+}
+
+.section:nth-child(2) {
+    background-color: #faedcd;
+}
+
+.section:last-child {
+    background-color: #fefae0;
+}
+
+#services {
+    background-color: #FAF9F6;
+    padding: 80px 0;
+    text-align: center
+}
+
+#services p {
+    margin: 0 auto;
+    max-width: 800px;
+    padding-top: 30px;
+}
+
+#services table {
+    width: 500px;
+    table-layout: fixed;
+    margin: 0 auto;
+    text-align: right;
+}
+
+#services td:nth-child(1) {
+    text-align: left;
+}
+
+#services th:nth-child(1) {
+    text-align: left;
+}
+
+.intro-table {
+    margin: 20px 0;
+}
+
+.pricing-table {
+    margin-bottom: 20px;
+}
+#cert-banner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 200px;
+}
+
+.cert {
+    max-height: 75px;
+}
+
+#contact-container {
+    display: flex;
+    background-color: #FAF9F6;
+    flex-wrap: wrap;
+    
+}
+
+#contact-container h1 {
+    text-align: center;
+    padding: 60px 0;
+    flex-basis: 100%;;
+}
+
+#contact-section {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    margin: 0 auto;
+}
+
+.contact-form {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 500px;
+}
+.contact-form h2 {
+    margin-top: 0;
+}
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.contact-form input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.contact-form .optional {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.svg {
+    height: 30px;
+    background-color: transparent;
+    padding-right: 25px;
+}
+
+#phone, #email {
+    display: flex;;
+    padding: 10px;
+}
+
+#socials {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;;
+    width: 200px;
+    padding-left: 10px;
+}
+
+#socials img {
+height: 30px;
+}
+
+#socials a img:hover {
+    height: 50px;
+}
+
+
+#contact-map  iframe {
+    width: 350px;
+    height: 350px;
+    margin: 30px auto;
+}
+
+footer {
+    display: flex;
+    min-height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #36454f;
+    color: white;
+    font-size: 0.8rem;
+}
+
+/* MEDIA QUERIES */
+
+/* Mobile Phones (Portrait) */
+@media (max-width: 480px) {
+    /* Styles for very small phones */
+    #home-banner h2 {
+        font-size: 2.7rem;
+    }
+    #about {
+        padding: 15px 0;
+        display: flex;
+        flex-direction: column
+    }
+    #profile {
+        margin: auto;
+    }
+
+    #profile-info {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    #process-section {
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    
+    #services table {
+    width: 90%;
+    }
+
+    #cert-banner {
+        flex-wrap: wrap;
+        padding: 10px 0;
+    }
+    .cert {
+        width: 70%;
+        min-height: 100px;
+    }
+    #contact-section  {
+        flex-wrap: wrap;
+        justify-content: space;
+    }
+    .contact-form {
+        width: 90%;
+        margin: 0 auto;;
+    }
+    #contact {
+        width: 90%;
+        margin: 30px auto 0;
+    }
+    #contact-map {
+        width: 90%;
+        margin: 0 auto;
+    }
+    #contact-map iframe {
+        max-width: 100%;
+
+    }
+
+    #phone, #email {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 0.9rem;;
+    }
+
+    #contact img {
+        padding: 0;
+    }
+
+    #socials {
+        margin: 10px auto;
+        
+    }
+    
+    #main-nav .nav-links {
+        display: none;
+    }
+    #mobile-menu {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    #mobile-nav.active {
+        display: block;
+    }
+
+}
+
+
+/* Landscape Phones */
+@media (min-width: 481px) and (max-width: 767px) {
+    /* Styles for landscape phones */
+
+    #process-section {
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    #cert-banner {
+        flex-wrap: wrap;
+
+    }
+    .cert {
+        padding: 10px;
+    }
+    .section {
+        width: 500px;
+    }
+    #contact-section  {
+        flex-wrap: wrap;
+    }
+
+    #contact {
+        margin-top: 30px;
+    }
+
+    #main-nav .nav-links {
+        display: none;
+    }
+    #mobile-menu {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    #mobile-nav.active {
+        display: block;
+    }
+}
+
+/* Portrait Tablets */
+@media (min-width: 768px) and (max-width: 1014px) {
+    /* Styles for portrait tablets */
+    #process-section {
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        }
+
+    #contact-section  {
+        flex-wrap: wrap;
+    }
+    #main-nav .nav-links {
+        display: none;
+    }
+    #mobile-menu {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    #mobile-nav.active {
+        display: block;
+    }
+
+}
+
+/* Landscape Tablets and Small Desktops */
+@media (min-width: 1015px) and (max-width: 1280px) {
+    #process-section {
+        margin: 30px auto;
+        flex-wrap: wrap;
+        width: 750px;
+    
+    }
+    
+}
